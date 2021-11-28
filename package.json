@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "sudo rm -r /path/to/directory/* && vue-cli-service build",
+    "build": "sudo rm -r /var/www/html/* && vue-cli-service build && sudo cp -r dist/* /var/www/html/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
